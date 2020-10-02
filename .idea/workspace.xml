@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d9b380a-975a-4089-b609-faaaf7f6ef75" name="Default Changelist" comment="" />
+    <list default="true" id="8d9b380a-975a-4089-b609-faaaf7f6ef75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +20,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iK6ryL6RrjUmft3R9o2zCptWwP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -87,6 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601644138661</updated>
       <workItem from="1601644139743" duration="11659000" />
+      <workItem from="1601657560425" duration="314000" />
+      <workItem from="1601657986884" duration="890000" />
     </task>
     <servers />
   </component>
@@ -94,10 +106,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601645042117">
+    <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601660237824">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1601645042117" />
+    <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1601660237824" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1601657867767">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1601657867767" />
     <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1601657375919">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -118,5 +134,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1601657373350" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1601658023647">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1601658023647" />
   </component>
 </project>
