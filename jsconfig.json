@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "server",
+    "module": "esnext",
+    "target": "es6"
+  },
+  "include": ["server"],
+  "exclude": ["node_modules", "build"]
+}
