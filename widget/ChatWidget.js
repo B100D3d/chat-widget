@@ -14,7 +14,7 @@ export default class ChatWidget {
     }
 
     wsConnect() {
-        this.ws = new WebSocket("ws://localhost:3000")
+        this.ws = new WebSocket("wss://chat.devourer.ru/ws")
 
         this.ws.onopen = (e) => {
             console.log(e)

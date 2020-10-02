@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d9b380a-975a-4089-b609-faaaf7f6ef75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="8d9b380a-975a-4089-b609-faaaf7f6ef75" name="Default Changelist" comment="add: docker config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/widget/ChatWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/widget/ChatWidget.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
       <recent name="C:\Users\devourer\Documents\Coding\widget-chat\widget" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,9 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -98,45 +98,57 @@
       <updated>1601644138661</updated>
       <workItem from="1601644139743" duration="11659000" />
       <workItem from="1601657560425" duration="314000" />
-      <workItem from="1601657986884" duration="890000" />
+      <workItem from="1601657986884" duration="2589000" />
     </task>
+    <task id="LOCAL-00001" summary="add: docker config">
+      <created>1601660503109</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601660503109</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: docker config" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: docker config" />
   </component>
   <component name="WindowStateProjectService">
     <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601660237824">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1601660237824" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1601657867767">
+    <state x="189" y="0" key="CommitChangelistDialog2" timestamp="1601663290891">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1601657867767" />
-    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1601657375919">
+    <state x="189" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1601663290891" />
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1601663260881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601657375919" />
-    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1601657375919">
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601663260881" />
+    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1601663260881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601657375919" />
-    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1601657375919">
+    <state width="1345" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601663260881" />
+    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1601663260881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601657375919" />
-    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1601657375919">
+    <state width="1345" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601663260881" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1601663260881">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601657375919" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601663260881" />
     <state x="184" y="28" key="SettingsEditor" timestamp="1601657373350">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1601657373350" />
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1601658023647">
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2" timestamp="1601660516381">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1601658023647" />
+    <state x="275" y="112" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1601660516381" />
   </component>
 </project>
