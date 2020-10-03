@@ -18,14 +18,29 @@ const server = http.createServer(app)
 const wss = new WebSocket.Server({ server })
 
 wss.on("connection", (ws) => {
-    console.log("Connected")
+    wss.clients.forEach((client) => {
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(
+                JSON.stringify({
+                    type: "cu",
+                    connectedUsers: wss.clients.size,
+                })
+            )
+        }
+    })
     ws.on("message", (data) => {
-        console.log(data)
-        wss.clients.forEach((client) => {
-            if (client !== ws && client.readyState === WebSocket.OPEN) {
-                client.send(data)
-            }
-        })
+        try {
+            wss.clients.forEach((client) => {
+                if (client !== ws && client.readyState === WebSocket.OPEN) {
+                    client.send(
+                        JSON.stringify({
+                            type: "message",
+                            ...JSON.parse(data),
+                        })
+                    )
+                }
+            })
+        } catch (e) {}
     })
 })
 
