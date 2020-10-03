@@ -78,6 +78,7 @@ export default class ChatWidget {
             )
             this.addOwnMessage(message)
             this.inputNode.value = ""
+            this.inputNode.focus()
         }
     }
 
