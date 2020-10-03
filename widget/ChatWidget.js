@@ -1,6 +1,8 @@
 import styles from "./styles/chat.sass"
 import { random, randomFromArray } from "./utils"
 
+const NOTIFICATION_SOUND_URL = "https://chat.devourer.ru/juntos.mp3"
+
 const wsUrl =
     process.env.PRODUCTION === "true"
         ? "wss://chat.devourer.ru/ws"
@@ -11,8 +13,8 @@ const nicknames = [
     "Неизвестный Мангуст",
     "Неизвестный Ёж",
     "Неизвестный Лис",
-    "Неизвестный крот",
-    "Неизвестный бурундук",
+    "Неизвестный Крот",
+    "Неизвестный Бурундук",
 ]
 
 export default class ChatWidget {
@@ -22,9 +24,11 @@ export default class ChatWidget {
     usersCountNode = null
     ws = null
     nickname = null
+    notification = null
 
     constructor() {
         this.nickname = this.getRandomNickname()
+        this.notification = new Audio(NOTIFICATION_SOUND_URL)
         this.init()
     }
 
@@ -63,6 +67,7 @@ export default class ChatWidget {
                     (data.type = "message" && data.message && data.nickname)
                 ) {
                     this.addMessage(data)
+                    this.notification?.play()
                 }
             } catch (e) {
                 console.log(e)
