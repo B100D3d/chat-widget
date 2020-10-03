@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d9b380a-975a-4089-b609-faaaf7f6ef75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/widget/utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/widget/ChatWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/widget/ChatWidget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/widget/styles/chat.sass" beforeDir="false" afterPath="$PROJECT_DIR$/widget/styles/chat.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
       <workItem from="1601644139743" duration="11659000" />
       <workItem from="1601657560425" duration="314000" />
       <workItem from="1601657986884" duration="2910000" />
-      <workItem from="1601727382589" duration="10124000" />
+      <workItem from="1601727382589" duration="10888000" />
     </task>
     <task id="LOCAL-00001" summary="add: docker config">
       <created>1601660503109</created>
@@ -126,7 +121,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601663423228</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add: env config to webpack">
+      <created>1601737585375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601737585375</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add: send message to all users about connected users count on each connection">
+      <created>1601737697966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601737697966</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add: chat-widget functionality and styles">
+      <created>1601737769548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601737769548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,41 +152,44 @@
     <MESSAGE value="add: docker config" />
     <MESSAGE value="fix: docker node ref" />
     <MESSAGE value="change: ws server url" />
-    <option name="LAST_COMMIT_MESSAGE" value="change: ws server url" />
+    <MESSAGE value="add: env config to webpack" />
+    <MESSAGE value="add: send message to all users about connected users count on each connection" />
+    <MESSAGE value="add: chat-widget functionality and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: chat-widget functionality and styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601660237824">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="457" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1601660237824" />
-    <state x="96" y="0" width="751" height="768" key="CommitChangelistDialog2" timestamp="1601663422485">
+    <state x="96" y="0" width="1215" height="768" key="CommitChangelistDialog2" timestamp="1601737768404">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="96" y="0" width="751" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1601663422485" />
-    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1601732964140">
+    <state x="96" y="0" width="1215" height="768" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1601737768404" />
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom" timestamp="1601737529033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601732964140" />
-    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1601732964140">
+    <state width="1345" height="185" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601737529033" />
+    <state width="1345" height="185" key="GridCell.Tab.0.center" timestamp="1601737529033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601732964140" />
-    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1601732964140">
+    <state width="1345" height="185" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601737529033" />
+    <state width="1345" height="185" key="GridCell.Tab.0.left" timestamp="1601737529033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601732964140" />
-    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1601732964140">
+    <state width="1345" height="185" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601737529033" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right" timestamp="1601737529033">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601732964140" />
+    <state width="1345" height="185" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601737529033" />
     <state x="184" y="28" key="SettingsEditor" timestamp="1601657373350">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1601657373350" />
-    <state x="78" y="100" key="Vcs.Push.Dialog.v2" timestamp="1601663425922">
+    <state x="78" y="100" key="Vcs.Push.Dialog.v2" timestamp="1601737771706">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="78" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1601663425922" />
+    <state x="78" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1601737771706" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601730700477">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

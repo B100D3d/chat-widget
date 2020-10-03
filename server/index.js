@@ -17,7 +17,7 @@ const server = http.createServer(app)
 
 const wss = new WebSocket.Server({ server })
 
-wss.on("connection", (ws) => {
+const sendClientsCount = () =>
     wss.clients.forEach((client) => {
         if (client.readyState === WebSocket.OPEN) {
             client.send(
@@ -28,6 +28,12 @@ wss.on("connection", (ws) => {
             )
         }
     })
+
+wss.on("connection", (ws) => {
+    sendClientsCount()
+
+    ws.on("close", sendClientsCount)
+
     ws.on("message", (data) => {
         try {
             wss.clients.forEach((client) => {
