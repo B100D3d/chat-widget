@@ -33,17 +33,24 @@ export default class ChatWidget {
         this.wsConnect()
     }
 
-    wsConnect() {
+    wsConnect = () => {
         this.ws = new WebSocket(wsUrl)
 
         this.ws.onopen = (e) => {
             console.log(e)
+            this.addConnectionInfoMessage({
+                message: "You successfully connected to the chat.",
+            })
         }
 
         this.ws.onclose = (e) => {
-            if (e.code === 1006 && !e.wasClean) {
-                this.ws = new WebSocket(wsUrl)
+            if (!e.wasClean) {
+                setTimeout(this.wsConnect, 2000)
             }
+            this.addConnectionInfoMessage({
+                message: "Connection error.",
+                error: true,
+            })
             console.log(e)
         }
 
@@ -96,15 +103,27 @@ export default class ChatWidget {
 
         li.appendChild(messageTextSpan)
         li.appendChild(nicknameSpan)
-        if (this.chatNode.firstChild) {
-            this.chatNode.insertBefore(li, this.chatNode.firstChild)
-        } else {
-            this.chatNode.appendChild(li)
-        }
+        this.insertMessage(li)
     }
 
     addOwnMessage(message) {
         this.addMessage({ message, nickname: this.nickname, own: true })
+    }
+
+    addConnectionInfoMessage({ message, error }) {
+        const li = document.createElement("li")
+        li.classList.add(styles.info)
+        if (error) li.classList.add(styles.error)
+        li.innerText = message
+        this.insertMessage(li)
+    }
+
+    insertMessage(element) {
+        if (this.chatNode?.firstChild) {
+            this.chatNode.insertBefore(element, this.chatNode.firstChild)
+        } else {
+            this.chatNode.appendChild(element)
+        }
     }
 
     setUsersCount(count) {
