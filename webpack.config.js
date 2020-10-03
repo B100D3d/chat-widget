@@ -1,4 +1,7 @@
 const path = require("path")
+const webpack = require("webpack")
+
+require("dotenv").config()
 
 module.exports = {
     mode: "production",
@@ -58,4 +61,9 @@ module.exports = {
             },
         ],
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            "process.env.PRODUCTION": JSON.stringify(process.env.PRODUCTION),
+        }),
+    ],
 }
